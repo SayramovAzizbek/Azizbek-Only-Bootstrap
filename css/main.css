@@ -1,10 +1,56 @@
 /* Variables */
-:root {
+/* :root { */
     /* --main-text-color : #fff; */
     /* --main-bg-color : #fff; */
     /* --main-font-size : 16px; */
     /* --main-font-weight : 400; */
     /* --main-line-height : 1.5; */
+/* } */
+
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("/fonts/PlayfairDisplay-Italic.ttf") format("ttf"),
+        url("/fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("/fonts/PlayfairDisplay-Black.ttf") format("ttf"),
+        url("/fonts/PlayfairDisplay-BlackItalic.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("/fonts/PlayfairDisplay-Bold.ttf") format("ttf"),
+        url("/fonts/PlayfairDisplay-BoldItalic.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe Ul";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("/fonts/Segoe\ UI.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe Ul";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("/fonts/Segoe\ UI\ Bold.ttf") format("ttf");
+    src: local(""), url("/fonts/Segoe\ UI\ Bold\ Italic.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe Ul";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("/fonts/Segoe\ UI\ Italic.ttf") format("ttf");
 }
 
 @font-face {
@@ -126,7 +172,7 @@ body {
 .hero-part-title {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-size: 48px;
-    /* font-weight: 300; */
+    font-weight: bolder;
 }
 
 .hero-part-text {
@@ -136,6 +182,17 @@ body {
 }
 
 /* End of Hero Section */
+.post-part-direction {
+    font-weight: bolder;
+}
+
+.post-part-title {
+    font-family: "Playfair Display";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: bolder;
+}
+
 .blog-post-top-title,
 .example-main-title {
     font-family: "Playfair Display", "Times New Roman", serif;
@@ -184,7 +241,7 @@ body {
     font-weight: 600;
 }
 
-.about-title{
+.about-title {
     font-size: 25px;
 }
 
