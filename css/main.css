@@ -1,0 +1,201 @@
+/* Variables */
+:root {
+    /* --main-text-color : #fff; */
+    /* --main-bg-color : #fff; */
+    /* --main-font-size : 16px; */
+    /* --main-font-weight : 400; */
+    /* --main-line-height : 1.5; */
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/playfair-display-v30-latin-regular.woff') format('woff');
+}
+
+/* General */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* font-family: "Roboto", "Arial", sans-serif; */
+    font-size: 16px;
+    /* font-weight: 400; */
+    /* line-height: var(--main-line-height); */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Sticky-Footer */
+.site-main {
+    flex-grow: 1;
+}
+
+/* Start Header Section */
+.header-top-links {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-subs-link {
+    color: #6c757d;
+}
+
+.site-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.site-sign-link {
+    position: relative;
+    padding: 4px 8px;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.site-sign-link::before {
+    position: absolute;
+    top: 5px;
+    left: -36px;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://azizbek-namanganliklar-24.netlify.app/images/search.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.header-list {
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header-link {
+    display: inline-block;
+}
+
+/* End of Header Section */
+
+/* Start Hero Section */
+.hero-part-main {
+    margin-bottom: 24px;
+    padding: 48px;
+}
+
+.hero-part-title {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    /* font-weight: 300; */
+}
+
+.hero-part-text {
+    margin: 16px 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* End of Hero Section */
+.blog-post-top-title,
+.example-main-title {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: bold;
+}
+
+.blog-post-main-title,
+.another-blog-title {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.blog-post-top-title {
+    font-size: 32px;
+}
+
+.blockquote-title-next {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.example-main-title {
+    font-size: 28px;
+}
+
+.html-inline-title,
+.heading-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.heading-title,
+.about-title {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.about-side-main {
+    position: sticky;
+    top: 32px;
+    bottom: 32px;
+}
+
+.about-title,
+.about-archives-title {
+    font-weight: 600;
+}
+
+.about-title{
+    font-size: 25px;
+}
+
+.about-archives-title {
+    font-size: 1.75rem;
+}
+
+.footer-part {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
